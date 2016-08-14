@@ -1,0 +1,15 @@
+
+<nav>
+  <div class="nav-wrapper">
+    <a href="" class="brand-logo">Logo</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a [routerLink]="['signin']">login</a></li>
+      <li><a [routerLink]="['/signup']">Create account</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+    <a [routerLink]="['forget']">Forget Password</a>
+</div>
